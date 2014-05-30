@@ -1,0 +1,34 @@
+//  Screen
+//  ======
+
+@charset "utf-8";
+
+// @import "normalize"; // reset
+// @import "old-style";
+// @import "old-style-library";
+@import "requirements";
+@import "settings";
+@import "base";
+@import "modules";
+
+%content-bg {
+  background-image: image-url("latest-news-bg2.png");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+%news-wrapper {
+  background-color: rgba(255,255,255,.7);
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+  @include scut-margin(160px n n 150px);
+}
+
+%table-style {
+  tr + tr {border-top: 1px dashed $grayLight;}
+}
+
+.latest_post--header {
+  @include scut-relative(120px n n 212px);
+}
+
+// @import "print";

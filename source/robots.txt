@@ -1,0 +1,9 @@
+# robotstxt.org/
+
+# To exclude all robots from the entire server
+User-agent: *
+Disallow: /
+
+# To allow all robots complete access
+# User-agent: *
+# Disallow:

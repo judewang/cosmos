@@ -1,0 +1,29 @@
+//  Grid settings
+//  =============
+
+$susy: (
+  // container: 40em,
+  columns: 12,
+  gutters: 1/4,
+  column-width: rhythm(3),
+  gutter-opsition: inside-static,
+  debug: (
+    // image: show,
+  ),
+  use-custom: (
+    // clearfix: true,
+  ),
+);
+
+$grid-padding: scale(medium);
+
+%container--grid-padding {
+  @include container;
+  @include scut-padding(n $grid-padding);
+}
+
+//  Breakpoints
+//  -----------
+
+// $tablet-break: ;
+$desktop-break: rhythm(3) * 15;

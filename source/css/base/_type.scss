@@ -1,0 +1,42 @@
+//  Type
+//  ====
+
+%body {
+  p, ul, ol, dl, pre, blockquote {@extend %rhythm;}
+  p:empty {display: none;}
+  a {@extend %link;}
+
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 0;
+    @extend %trailer;
+    ul, ol {
+      padding-left: scale(medium);
+      margin-top: 0;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    @include scut-margin(n auto);
+  }
+}
+
+%type {
+  @extend %headings;
+  @extend %body;
+}
+
+//  Selection style
+//  ===============
+
+// ::selection {
+//   color: #fff;
+//   text-shadow: none;
+//   background-color: $alt;
+// }

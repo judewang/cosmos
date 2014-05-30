@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jude Wang (jude@jude.asia)",
+  "license": "ISC",
+  "source_path": "source",
+  "css_path": "source/css",
+  "sass_path": "source/sass",
+  "js_path": "source/js",
+  "coffee_path": "source/coffee",
+  "image_path": "source/img",
+  "font_path": "source/fonts",
+  "vendor_path": "vendor",
+  "build_path": "build",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-svgmin": "~0.3.1",
+    "grunt-rename": "~0.1.3",
+    "grunt-modernizr": "~0.5.2",
+    "grunt-uncss": "~0.3.2",
+    "load-grunt-tasks": "~0.2.1"
+  }
+}

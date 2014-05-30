@@ -1,0 +1,21 @@
+//  Headings
+//  ========
+
+%h1 {
+  @extend %rhythm;
+  @include adjust-font-size-to(scale(large));
+}
+%h2 {
+  @extend %rhythm;
+  @include adjust-font-size-to(scale(medium));
+}
+%h3 {
+  @extend %rhythm;
+  @include adjust-font-size-to(scale(normal));
+}
+
+%headings {
+  @for $i from 1 through 3 {
+    h#{$i} {@extend %h#{$i};}
+  }
+}

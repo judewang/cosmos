@@ -1,0 +1,45 @@
+---
+title: 最新消息
+---
+.latest_news_area
+  h1.page-title.latest_post--header 最新消息
+  .wrapper--cosmos_latest_post
+    table.cosmos_latest_post
+      tbody
+        - data.news.each do |news|
+          tr
+            td.latest_news_date
+              = "2012-#{rand(1..12)}-#{rand(1..30)}"
+            td.latest_news_author
+              = link_to news.author, '#link'
+            td.latest_news_column
+              = link_to "{ #{news.column} }", '#link'
+            td
+              = link_to news.name, '#link'
+
+  .news-pagination__wrapper
+    ul.news-pagination
+      li
+        a href="custom_cosmos_news?&amp;news_page=1" 上一頁
+      li.active
+        a[href="custom_cosmos_news?&amp;news_page=1"]
+          | 1
+      li
+        a[href="custom_cosmos_news?&amp;news_page=2"]
+          | 2
+      li
+        a[href="custom_cosmos_news?&amp;news_page=3"]
+          | 3
+      li.disable ...
+      li
+        a[href="custom_cosmos_news?&amp;news_page=27"]
+          | 27
+      li
+        a[href="custom_cosmos_news?&amp;news_page=28"]
+          | 28
+      li
+        a[href="custom_cosmos_news?&amp;news_page=29"]
+          | 29
+      li
+        a[href="custom_cosmos_news?&amp;news_page=2"]
+          | 下一頁

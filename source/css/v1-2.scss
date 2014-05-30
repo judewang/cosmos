@@ -1,0 +1,31 @@
+//  Screen
+//  ======
+
+@charset "utf-8";
+
+// @import "normalize"; // reset
+// @import "old-style";
+// @import "old-style-library";
+@import "requirements";
+@import "settings";
+@import "base";
+@import "modules";
+
+%content-bg {
+  background-image: image-url("latest-news-bg1.png");
+  background-position: 50% 0%;
+  background-repeat: repeat-y;
+}
+
+%table-style {
+  tr + tr {border-top: 1px dotted $grayLight;}
+  @include scut-margin(5em n);
+}
+
+%news-wrapper {
+  margin: 0 60px;
+  background-image: image-url("latest-news-wrapper-bg1.png");
+  box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+}
+
+// @import "print";

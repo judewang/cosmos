@@ -1,0 +1,172 @@
+﻿/******************************************************************
+Theme Name: 天行書苑
+Theme URI: http://jude.asia
+Description: 天行書苑網站
+Author: Jude creative partners
+Author URI: http://jude.asia
+Version: 1.1
+Tags: flexble-width, translation-ready, microformats, rtl-language-support
+
+License: All Rights Reserved.
+
+nav ul li {
+	cursor: default;
+}
+
+p.byline span.amp {
+	
+}
+
+*/
+
+/* IE Hack
+*/
+
+#wpcc_output a {
+	filter: none \9;	
+}
+
+ul {
+	padding-left: 0 \9;	
+}
+
+
+
+
+/* 篆體標題
+*/
+
+h1 {
+  font-weight: normal;
+  font-family: DFNewChuan-B5;
+  font-size: 40px;
+/*  margin-top: -10px;
+  margin-left: -5px;
+  letter-spacing: -3px;
+*/}
+h2 {
+  /*letter-spacing: 2px;*/
+}
+.entry-content p {
+  font-size: 18px;
+}
+
+.authors .entry-content p {
+  font-size: 14px;
+}
+
+/* 數位發行的書籍
+*/
+
+div#book1 {
+	height: 500px;
+}
+
+div#book_cover img {
+	max-width: 300px;
+	border: 2px solid #777;
+}
+
+dd.noshow {
+	display:none;
+}
+
+/* 修正翻閱式書籍的紅色框
+*/
+
+.flipbook-container .button, .flipbook-container .button:visited {
+	border-width: 0;
+}
+
+/* 影音教學 small_box_wrapper
+*/
+
+.site_map_switch {
+	cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    left: 10px;
+    position: relative;
+    top: 5px;
+    width: 24px;
+}
+
+/* 書苑地圖的開啟和收合按鈕
+*/
+
+.plus {
+	background: url('images/001_01.png') no-repeat;
+}
+
+.minus {
+	background: url('images/001_02.gif') no-repeat;
+}
+
+/* 聯絡我們表格欄位的位置修正
+*/
+
+#ipt_name {
+	top: -3px !important;
+	background: transparent;
+}
+#ipt_phone {
+	top: 3px !important;
+	background: transparent;
+}
+#ipt_email {
+	top: 14px !important;
+	background: transparent;
+}
+#ipt_send {
+	right: -33px !important;
+	padding: 2px 14px !important;
+	background: transparent;
+}
+#ipt_comments {
+	background: transparent;
+	width: 395px;
+	height: 200px;
+}
+
+form.contact_us {
+    left: 50% !important;
+    margin-left: -125px !important;
+    min-height: 380px !important;
+    width: 510px !important;
+}
+
+#ipt_send {
+	position: relative !important;
+	left: 50%;
+	margin-left: -225px;
+}
+
+/* 側邊欄文章，若是目前正在閱讀的文章，加上底色
+*/
+
+.sidebar_current_post {
+	background: #303885;
+}
+
+.sidebar_current_post a {
+	color: #eee;
+	font-weight: bold;
+}
+
+.sidebar_current_post a:hover, .sidebar_current_post a:active {
+	color: #fff;
+}
+
+/* 調整影音教學區的行高
+*/
+
+body.page-template-page-custom-root-php #content.video-root h4 {
+	margin: 0.8em 2em 0.2em 0;
+}
+
+/* 調整首頁數位出版品的hiver color
+*/
+
+#book a:hover {
+  color: #f5d131;
+}

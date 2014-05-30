@@ -1,0 +1,35 @@
+//  Module Scale and base font settings
+//  ===================================
+
+$base-font-size:   15px;
+$base-line-height: ms(1, $base-font-size);
+$scut-rem-base: scut-strip-unit($base-font-size);
+
+$rhythm-unit: rem;
+$rem-with-px-fallback: false;
+
+$ms-base:          $base-font-size;
+$ms-ratio:         $golden;
+
+$scale: (
+  xxxlarge  : 8,
+  xxlarge   : 6,
+  xlarge    : 4,
+  large     : 2,
+  medium    : 1,
+  normal    : 0,
+  small     : -1,
+  xsmall    : -2,
+  xxsmall   : -3,
+  xxxsmall  : -4,
+);
+
+@function scale($ratio) {
+  @return ms(map-get($scale, $ratio));
+}
+
+%leader           {@include leader;}
+%leader--padding  {@include padding-leader;}
+%rhythm           {@include rhythm(1, 0, 0, 1);}
+%trailer          {@include trailer;}
+%trailer--padding {@include padding-trailer;}

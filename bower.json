@@ -1,0 +1,25 @@
+{
+  "name": "A blank template",
+  "version": "0.0.1",
+  "authors": [
+    "Jude Wang <jude@jude.asia>"
+  ],
+  "description": "a middleman default template",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "~3.0.0",
+    "Retina-sprites-for-Compass": "*",
+    "scut": "~0.9.1",
+    "jquery": "~2.1.0",
+    "selectivizr": "~1.0.2",
+    "nwmatcher": "~1.3.1"
+  }
+}

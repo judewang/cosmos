@@ -1,0 +1,57 @@
+#content.latest_news__content #main {
+  @extend %content-bg;  
+}
+
+.wrapper--cosmos_latest_post {
+  @extend %news-wrapper;
+  padding: 0 1em;
+  border-radius: 5px;  
+}
+
+.cosmos_latest_post {
+  width: 100%;
+  line-height: 2.5;
+  font-size: 16px;
+  @extend %table-style !optional;
+  a {display: block;}
+  tr:hover a {color: #dd1d02 !important;}
+}
+.latest_news_column a {
+  color: #2D3F8D !important;
+  &:hover {color: #dd1d02 !important;}
+}
+
+.news-pagination__wrapper {
+  text-align: center;
+  @extend %rhythm;
+}
+
+%btn-pressed {
+  background-image: none;
+  background-color: #dd1d02;
+  color: #fff !important;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+.news-pagination {
+  @extend %scut-list-inline;
+  a {
+    display: block;
+    width: 2em;
+    background-image: linear-gradient(to bottom, #fff, #eee);
+    border: 1px solid shade(#eee, 5%);
+    border-radius: 3px;
+    text-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    @include scut-vcenter-lh(2em);
+    &:hover {
+      @extend %btn-pressed;
+    }
+  }
+  li:first-child a,
+  li:last-child a {width: 4em;}
+  .active a {
+    @extend %btn-pressed;
+  }
+  .disable {width: 2em;}
+}

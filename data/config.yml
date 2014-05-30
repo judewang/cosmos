@@ -1,0 +1,5 @@
+ga: 
+
+enable_turbolinks: true
+
+include_favicons: false
